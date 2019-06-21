@@ -14,8 +14,14 @@ public class WeightLoose extends AppCompatActivity {
         setContentView(R.layout.activity_weight_loose);
     }
 
+
     public void dite(View view) {
-        Intent i=new Intent(WeightLoose.this,Diet.class);
-        startActivity(i);
+        Intent intent=new Intent(WeightLoose.this,Diet.class);
+        startActivity(intent);
+    }
+
+    public void execr(View view) {
+        Intent intent1=new Intent(WeightLoose.this,Exercise.class);
+        startActivity(intent1);
     }
 }

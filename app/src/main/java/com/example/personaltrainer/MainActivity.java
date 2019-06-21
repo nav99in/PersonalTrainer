@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gainweight(View view) {
+        Intent intent1 = new Intent(MainActivity.this, Exercise.class);
+        startActivity(intent1);
     }
 
     public void haircare(View view) {
