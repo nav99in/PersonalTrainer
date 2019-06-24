@@ -22,16 +22,27 @@ public class Exercise extends AppCompatActivity {
 
 
     public void cardio(View view) {
-    }
-
-    public void yoga(View view) {
         Intent intent=new Intent(Exercise.this,Exec.class);
         startActivity(intent);
-        }
+    }
+
+
 
     public void st(View view) {
-        Intent intent1=new Intent(Exercise.this,Bmi.class);
-        startActivity(intent1);
+        Intent intent3=new Intent(Exercise.this,Bmi.class);
+        startActivity(intent3);
+    }
+
+    public void Strengthtrain(View view) {
+        Intent intent4=new Intent(Exercise.this,Strength_Training.class);
+        startActivity(intent4);
+    }
+
+
+
+    public void yoggg(View view) {
+        Intent intent2=new Intent(Exercise.this,Yog.class);
+        startActivity(intent2);
     }
 }
 

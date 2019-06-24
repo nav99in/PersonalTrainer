@@ -35,20 +35,12 @@ public class Tab3_Fragment extends Fragment {
 
         // define static html text
 
-        String customHtml = "<html><body><h2>1. EAT FRUITS and VEGGIES</h2>" +
-                "<p>Eating fruits and vegetables are of great help to human body.Loading on fruits and veggies will help you get a glowing skin.\n\n</p>" +
-                "<h2>2. STAY HYDRATED</h2>" +
-                "<p>Again staying hydrated is very important for your health.Drinking plenty of water helps your akin to stay hydrated and flush out toxins.\n\n</p>" +
-                "<h2>3. SIP ON SOME TEA</h2>" +
-                "<p>We are all aware of the benefits of green tea.Sipping some green tea will help your skin in many ways.\n\n</p>" +
-                "<h2>4. MUNCH ON NUTS</h2>" +
-                "<p>Eat nuts for a better improvement in skin condition.\n\n</p>" +
-                "<h2>5. EXERCISE</h2>" +
-                "<p>Modern doctors advise exercising to keep your muscles and joints healthy and toned, while helping you sweat out toxins. Exercise will also improve blood circulation, digestion, and give you a healthy blush!\n\n\n</p>" +
-                "<h2>6. STAY STRESS FREE</h2>" +
-                "<p>Stress is not good for you.Always try to stay stress free for a beautiful mind peace and healthy skin.\n\n</p>" +
-                "<h2>7. MOISTURIZER TO RESCUE</h2>" +
-                "<p>Always use moisturizer while stepping out from home to keep tan at bay and also use moisturizer at night for a well hydrated skin.\n\n</p>" +
+        String customHtml = "<html><body><h1><font color=red>Diet Plan 3\n\n</font></h1>" +
+                "<p>Cucumbers make tasty and filling salads that can keep you going all along the day. Mix 2 lbs of cucumbers with a pinch of salt, a teaspoon of herbs such as oregano,parsley and dill, and olive oil to make a delicious salad for your cucumber diet.Besides the health benefits of cucumbers, the herbs are rich in vitamins and minerals that provide essential nourishment to the body. It works as a fantastic natural skin care product, which can instantly brighten up your skin and eyes. Here's an idea for a standard cucumber diet.\n\n</p>" +
+                "<h2><font color=purple>The Cucumber Diet.\n\n</font></h2>" +
+                "<p><h4><font color=blue>Breakfast-</font></h4> 1 bowl of cucumber salad, 1 cup of tea, and a toast of wheat bread.\n\n"+
+                "<h4><font color=blue>Lunch-</font></h4> Chapati/Bread, a bowl of cucumber salad.\n\n"+
+                "<h4><font color=blue>Dinner-</font></h4> Only salad.\n\n</p>" +
                 "</body></html>";
 
         simpleWebView.loadData(customHtml, "text/html", "UTF-8"); // load html string data in a web view

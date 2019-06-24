@@ -32,6 +32,8 @@
     <string name="obese_class_iii">Obesety Class_iii</string>
     <string name="underweight">Underweight</string>
     <string name="b_m_i">B.M.I</string>
+    <string name="strength_training">Strength Training</string>
+    <string name="joint_pain">Joint Pain</string>
 
 
 </resources>

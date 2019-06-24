@@ -23,15 +23,25 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent1);
     }
 
+
+
     public void haircare(View view) {
+        Intent intent2 = new Intent(MainActivity.this,Hair_Care.class);
+        startActivity(intent2);
     }
 
     public void bodycare(View view) {
+        Intent intent3 = new Intent(MainActivity.this,Body_Care.class);
+        startActivity(intent3);
     }
 
     public void generaltips(View view) {
+        Intent intent4 = new Intent(MainActivity.this,General_Tips.class);
+        startActivity(intent4);
     }
 
     public void skincare(View view) {
+        Intent intent5 = new Intent(MainActivity.this,Skin_Care.class);
+        startActivity(intent5);
     }
 }

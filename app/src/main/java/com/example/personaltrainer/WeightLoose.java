@@ -24,4 +24,15 @@ public class WeightLoose extends AppCompatActivity {
         Intent intent1=new Intent(WeightLoose.this,Exercise.class);
         startActivity(intent1);
     }
+
+    public void wm(View view) {
+        Intent intent2=new Intent(WeightLoose.this,Wtm.class);
+        startActivity(intent2);
+    }
+
+
+    public void rtm(View view) {
+        Intent intent3=new Intent(WeightLoose.this,RT.class);
+        startActivity(intent3);
+    }
 }

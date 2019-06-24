@@ -51,7 +51,7 @@ public class Tab2_Fragment extends Fragment {
                 "<h4><font color=blue>Snack-</font></h4> green tea."+
                 "<h4><font color=blue>Lunch-</font></h4> one chapati/bread, sprouts and tomato soup."+
                 "<h4><font color=blue>Snack-</font></h4> watermelon or any other fruit."+
-                "<h4><font color=blue>Dinner-</font></h4> plain cottage cheese, chapati/bread, salad.\n\n</p>" +
+                "<h4><font color=blue>Dinner-</font></h4> plain cottage cheese, chapati/bread, salad.</p>" +
         "</body></html>";
 
         simpleWebView.loadData(customHtml, "text/html", "UTF-8"); // load html string data in a web view

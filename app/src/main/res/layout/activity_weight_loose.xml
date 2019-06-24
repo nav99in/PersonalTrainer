@@ -5,9 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="@drawable/topsecond_bg"
     tools:context=".WeightLoose"
     android:orientation="vertical"
     android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        app:srcCompat="@drawable/weightloss_bg" />
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="406dp"
+        android:layout_height="695dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bottom" />
 
 
     <LinearLayout
@@ -15,18 +40,15 @@
         android:layout_width="193dp"
         android:layout_height="265dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.039"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.369">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/weight21"
@@ -88,9 +110,10 @@
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="100dp"
+                android:layout_width="91dp"
                 android:layout_height="67dp"
                 android:layout_gravity="center"
+                android:onClick="wm"
                 app:srcCompat="@drawable/time_management" />
 
             <TextView
@@ -98,8 +121,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center"
-                android:textStyle="bold"
-                android:text="@string/workout_management" />
+                android:text="@string/workout_management"
+                android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 
@@ -107,10 +130,8 @@
         android:layout_width="177dp"
         android:layout_height="267dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -118,7 +139,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.372">
+        app:layout_constraintVertical_bias="0.497">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/weight23"
@@ -144,7 +165,7 @@
                 android:layout_width="100dp"
                 android:layout_height="67dp"
                 android:layout_gravity="center"
-android:onClick="execr"
+                android:onClick="execr"
                 app:srcCompat="@drawable/dumbbells"
                 tools:ignore="OnClick" />
 
@@ -153,8 +174,8 @@ android:onClick="execr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center"
-                android:textStyle="bold"
-                android:text="@string/exercise" />
+                android:text="@string/exercise"
+                android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -174,13 +195,14 @@ android:onClick="execr"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.682" >
+            app:layout_constraintVertical_bias="0.682">
 
             <ImageView
-                android:layout_gravity="center"
                 android:id="@+id/imageView6"
-                android:layout_width="100dp"
-                android:layout_height="67dp"
+                android:layout_width="98dp"
+                android:layout_height="57dp"
+                android:layout_gravity="center"
+                android:onClick="rtm"
                 app:srcCompat="@drawable/timer" />
 
             <TextView
@@ -188,8 +210,8 @@ android:onClick="execr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center"
-                android:textStyle="bold"
-                android:text="@string/routine_maker" />
+                android:text="@string/routine_maker"
+                android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 

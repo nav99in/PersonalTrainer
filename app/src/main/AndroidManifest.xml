@@ -9,9 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Bmi"></activity>
+        <activity android:name=".RT"></activity>
+        <activity android:name=".Wtm" />
+        <activity android:name=".Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Yog" />
+        <activity android:name=".Strength_Training" />
+        <activity android:name=".Bmi" />
         <activity android:name=".Exec" />
         <activity android:name=".Exercise" />
+        <activity android:name=".Body_Care" />
+        <activity android:name=".General_Tips" />
+        <activity android:name=".Hair_Care" />
+        <activity android:name=".Skin_Care" />
         <activity android:name=".Diet" />
         <activity android:name=".WeightLoose" />
         <activity android:name=".MainActivity">
