@@ -21,18 +21,61 @@ public class Bmi extends AppCompatActivity {
     }
 
     public void calculateBMI(View v) {
-        String heightStr = height.getText().toString();
-        String weightStr = weight.getText().toString();
+        String heightStr = height.getText().toString().trim();
+        String weightStr = weight.getText().toString().trim();
 
-        if (heightStr != null && !"".equals(heightStr)
-                && weightStr != null  &&  !"".equals(weightStr)) {
-            float heightValue = Float.parseFloat(heightStr) / 100;
-            float weightValue = Float.parseFloat(weightStr);
-
-            float bmi = weightValue / (heightValue * heightValue);
-
-            displayBMI(bmi);
+        if (heightStr.isEmpty()) {
+            height.setError(getString(R.string.height_required));
+            height.requestFocus();
+            return;
         }
+        if (weightStr.isEmpty()) {
+            weight.setError(getString(R.string.weight_required));
+            weight.requestFocus();
+            return;
+        }
+
+        final float heightCentimeters;
+        try {
+            heightCentimeters = Float.parseFloat(heightStr);
+        } catch (NumberFormatException exception) {
+            height.setError(getString(R.string.enter_valid_measurements));
+            height.requestFocus();
+            return;
+        }
+
+        final float weightKilograms;
+        try {
+            weightKilograms = Float.parseFloat(weightStr);
+        } catch (NumberFormatException exception) {
+            weight.setError(getString(R.string.enter_valid_measurements));
+            weight.requestFocus();
+            return;
+        }
+
+        if (!isPositiveFinite(heightCentimeters)) {
+            height.setError(getString(R.string.enter_valid_measurements));
+            height.requestFocus();
+            return;
+        }
+        if (!isPositiveFinite(weightKilograms)) {
+            weight.setError(getString(R.string.enter_valid_measurements));
+            weight.requestFocus();
+            return;
+        }
+
+        float heightMeters = heightCentimeters / 100f;
+        float bmi = weightKilograms / (heightMeters * heightMeters);
+        if (!isPositiveFinite(bmi)) {
+            height.setError(getString(R.string.enter_valid_measurements));
+            height.requestFocus();
+            return;
+        }
+        displayBMI(bmi);
+    }
+
+    private boolean isPositiveFinite(float value) {
+        return value > 0 && !Float.isNaN(value) && !Float.isInfinite(value);
     }
 
     private void displayBMI(float bmi) {
@@ -56,7 +99,6 @@ public class Bmi extends AppCompatActivity {
             bmiLabel = getString(R.string.obese_class_iii);
         }
 
-        bmiLabel = bmi + "\n\n" + bmiLabel;
-        result.setText(bmiLabel);
+        result.setText(getString(R.string.bmi_result, bmi, bmiLabel));
     }
 }

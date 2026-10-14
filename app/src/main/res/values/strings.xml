@@ -14,7 +14,6 @@
     <string name="exercise">Exercise</string>
     <string name="Diet">diet</string>
     <string name="eat_fruits_and_veggies_eating_fruits_and_vegetables_are_of_great_help_to_human_body_loading_on_fruits_and_veggies_will_help_you_get_a_glowing_skin_again_staying_hydrated_is_very_important_for_your_health_drinking_plenty_of_water_helps_your_akin_to_stay_hydrated_and_flush_out_toxins_we_are_all_aware_of_the_benefits_of_green_tea_sipping_some_green_tea_will_help_your_skin_in_many_ways_n_n_p"><![CDATA[EAT FRUITS and VEGGIES Eating fruits and vegetables are of great help to human body.Loading on fruits and veggies will help you get a glowing skin.Again staying hydrated is very important for your health.Drinking plenty of water helps your akin to stay hydrated and flush out toxins. We are all aware of the benefits of green tea.Sipping some green tea will help your skin in many ways.  </p>]]></string>
-    <string name="strenght_training">Strenght Training</string>
     <string name="cardio">Cardio</string>
     <string name="yoga">Yoga</string>
 
@@ -34,6 +33,16 @@
     <string name="b_m_i">B.M.I</string>
     <string name="strength_training">Strength Training</string>
     <string name="joint_pain">Joint Pain</string>
+    <string name="weight">Weight</string>
+    <string name="weight_kg">Enter weight in kg</string>
+    <string name="height">Height</string>
+    <string name="height_cm">Enter height in cm</string>
+    <string name="calculate_bmi">Calculate BMI</string>
+    <string name="height_required">Enter your height</string>
+    <string name="weight_required">Enter your weight</string>
+    <string name="enter_valid_measurements">Enter a valid value greater than zero</string>
+    <string name="bmi_result">%1$.1f\n\n%2$s</string>
+    <string name="section_content_unavailable">The original content for this section was not included in the project.</string>
 
 
 </resources>

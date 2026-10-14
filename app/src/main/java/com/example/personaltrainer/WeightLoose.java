@@ -26,13 +26,10 @@ public class WeightLoose extends AppCompatActivity {
     }
 
     public void wm(View view) {
-        Intent intent2=new Intent(WeightLoose.this,Wtm.class);
-        startActivity(intent2);
+        InfoActivity.start(this, R.string.workout_management);
     }
 
-
     public void rtm(View view) {
-        Intent intent3=new Intent(WeightLoose.this,RT.class);
-        startActivity(intent3);
+        InfoActivity.start(this, R.string.routine_maker);
     }
 }
