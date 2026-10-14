@@ -34,15 +34,12 @@ public class Exercise extends AppCompatActivity {
     }
 
     public void Strengthtrain(View view) {
-        Intent intent4=new Intent(Exercise.this,Strength_Training.class);
-        startActivity(intent4);
+        InfoActivity.start(this, R.string.strength_training);
     }
 
 
 
     public void yoggg(View view) {
-        Intent intent2=new Intent(Exercise.this,Yog.class);
-        startActivity(intent2);
+        InfoActivity.start(this, R.string.yoga);
     }
 }
-
